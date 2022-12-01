@@ -1,0 +1,62 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   overflow: hidden;
+   background: black;
+   color: white;
+}
+
+header {
+   display: flex;
+}
+
+h1 {
+   color: rgba(255, 215, 0);
+   position: relative;
+}
+
+.resume {
+   width: 80%;
+   background-color: rgba(62, 62, 62, 0.85);
+   border: rgba(255, 215, 0);
+   border-radius: 30px;
+
+}
+
+
+/* banner canves */
+/* TODO: center banner text */ 
+#canvas1 {
+   position: absolute;
+   top: 0;
+   left: auto;
+   right: auto;
+   z-index: -1;
+}
+
+/* constellations canvas */
+#canvas2 {
+   position: absolute;
+   top: 0; left: 0;
+   width: 100%;
+   height: 100%;
+   background: radial-gradient(black, black);
+   z-index: -2;
+}
+
+.pfp {
+   right: 30px;
+}
+
+
+footer {
+   bottom: 10px;
+   left: auto;
+   right: auto;
+   justify-content: center;
+   color: green;
+}
