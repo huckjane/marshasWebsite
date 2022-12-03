@@ -8,15 +8,58 @@ body {
    overflow: hidden;
    background: black;
    color: white;
+   padding: 10%;
+   font-family: courier;
 }
 
 header {
    display: flex;
 }
 
+.buttons {
+   position: absolute;
+   top: 2%;
+   left: 0;
+   width: 100vw;
+   text-align: center;
+
+}
+
+.button {
+   position: relative;
+   width: 8%;
+   height: 40px;
+   margin: 10px;
+   display: inline-block;
+   border-radius: 13px;
+   border: 4px solid green;
+   background: transparent;
+   transition: 0.5s;
+   font-size: 0.8em;
+   font-weight: 100;
+   color: green;
+   line-height: 20px;
+   min-width: 90px;
+}
+
+.button:hover {
+   color: gold;
+   box-shadow: inset 2px 2px 3px gold, inset -2px -2px 3px gold, 
+   inset 2px -2px 3px gold;
+   border: 4px solid gold;
+   background: transparent;
+}
+
+
 h1 {
    color: rgba(255, 215, 0);
    position: relative;
+   padding: 5px;
+
+}
+
+h2 {
+   padding: 5px;
 }
 
 .resume {
@@ -24,9 +67,14 @@ h1 {
    background-color: rgba(62, 62, 62, 0.85);
    border: rgba(255, 215, 0);
    border-radius: 30px;
-
+   padding: 5%;
 }
 
+.divider {
+   border-bottom: 2px solid gold;
+   margin: 2px 0;
+   clear: right;
+ }
 
 /* banner canves */
 /* TODO: center banner text */ 
@@ -36,6 +84,7 @@ h1 {
    left: auto;
    right: auto;
    z-index: -1;
+
 }
 
 /* constellations canvas */
@@ -49,7 +98,8 @@ h1 {
 }
 
 .pfp {
-   right: 30px;
+   left: 10px;
+   float: right;
 }
 
 
