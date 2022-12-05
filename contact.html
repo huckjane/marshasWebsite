@@ -11,9 +11,7 @@
       <link rel="icon" type="image/x-icon" href="/images/favicon.png">
    </head>
    <body>
-      <header>
-         <canvas id="canvas1" name="bannerscript"></canvas> 
-
+      <header>        
          <nav class="buttons">
             <button class="button button1" ><a href="index.html">HOME</a></button>
             <button class="button button1" ><a href="about.html">ABOUT</a></button>
@@ -23,7 +21,8 @@
       </header>
 
       <main>
-         <h1>Contact Me</h1>
+        <div class="form-container">
+         <h1>Contact Marsha</h1>
          <p>Please feel free to contact me for any reason!</p>
          <form method=“post” action='https://register-demo.freecodecamp.org'>
            <fieldset>
@@ -32,8 +31,8 @@
              <label for="email">Email: <input id="email" name="email" type="email" required /></label>
            </fieldset>
            <fieldset>
-             <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
-             <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+             <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
+             <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal</label>
            </fieldset>
            <fieldset>
              <label for="referrer">How did you hear about me?
@@ -50,7 +49,8 @@
              </label>
            </fieldset>
            <input type="submit" value="Submit" />
-         </form>       
+         </form>   
+        </div>    
       </main>
       
       <footer>

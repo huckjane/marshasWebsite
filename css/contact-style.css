@@ -15,7 +15,8 @@
     color: #eee;
     padding: 10%;
     font-family: sans-serif;
-    background-image:url("../images/circuit-board-green.png") fixed center;
+    background-image: url("/images/circuit-board-green.png");
+    
  }
  
  header {
@@ -48,7 +49,7 @@
     display: inline-block;
     border-radius: 999px;
     border: 4px solid green;
-    background: transparent;
+    background: rgba(40, 40, 40, 0.90);
     transition: 0.5s;
     font-size: 0.9em;
     font-weight: 100;
@@ -72,9 +73,13 @@
     box-shadow: inset 2px 2px 3px gold, inset -2px -2px 3px gold, 
     inset 2px -2px 3px gold;
     border: 4px solid gold;
-    background: transparent;
+    background: rgba(40, 40, 40, 0.90);
  }
  
+ .button a:hover {
+   color: gold;
+}
+
  .button:visited {
     color: green;
     text-decoration: none;
@@ -128,13 +133,14 @@
 
  
  footer {
-    width: 60%;
+    width: 45%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;
+    margin-bottom: 1em;
     color: green;
-    background-color: black;
+    background-color: rgba(40, 40, 40, 0.90);
+    border-radius: 999px;
  }
 
  /*    END TEMPLATE    */
@@ -145,6 +151,15 @@ h1, p {
     text-align: center;
   }
   
+  .form-container {
+   width: 70%;
+   background-color: rgba(40, 40, 40, 0.85);
+   border: rgba(255, 215, 0);
+   border-radius: 30px;
+   padding: 5%;
+   margin: 0em auto 0em auto;
+}
+
   form {
     width: 60vw;
     max-width: 500px;
@@ -155,8 +170,8 @@ h1, p {
   
   fieldset {
     border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
+    padding: 1rem 0;
+    border-bottom: 3px solid gold;
   }
   
   fieldset:last-of-type {
@@ -187,7 +202,7 @@ h1, p {
   }
   
   input, textarea {
-    background-color: green;
+    background-color: rgb(1, 86, 1);
     border: 1px solid #0a0a23;
     color: #ffffff;
   }
@@ -213,6 +228,4 @@ h1, p {
   input[type="file"] {
     padding: 1px 2px;
   }
-  
- 
   
