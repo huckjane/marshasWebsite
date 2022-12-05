@@ -4,12 +4,17 @@
    box-sizing: border-box;
 }
 
+html {
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
 body {
    overflow: hidden;
    background: black;
    color: #eee;
    padding: 10%;
-   font-family: Helvetica, sans-serif;
+   font-family: sans-serif;
 }
 
 header {
@@ -32,7 +37,6 @@ nav > ul {
    left: 0;
    width: 100vw;
    text-align: center;
-
 }
 
 .button {
@@ -73,6 +77,37 @@ nav > ul {
 .button:visited {
    color: green;
    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+   width: .85em;
+}
+
+::-webkit-scrollbar-track {
+   background: hsl(120 100% 25% / 1);     
+   border-radius: 100vw;
+   margin-block: .5em;
+   margin-inline: 1em;
+}
+
+/* moving inner portion aka thumb*/
+::-webkit-scrollbar-thumb {
+   background: hsl(51 100% 40% / 1);     
+   border: .25em solid hsl(51 75% 50% / 1);
+   border-radius: 100vw;
+}
+
+/* thumb optional hover darkened */
+::-webkit-scrollbar-thumb:hover {
+   background: hsl(51 100% 10% / 1);     
+}
+
+/* For Firefox */
+@supports (scrollbar-color: gold green) {
+   * {
+       scrollbar-color: gold green;     /* can use hsl or rgb… thumb track*/ 
+       scrollbar-width: auto;   /* only have none, auto, or thin option */
+   }
 }
 
 .summary {
@@ -148,4 +183,5 @@ footer {
    right: auto;
    justify-content: center;
    color: green;
+   background-color: black;
 }
