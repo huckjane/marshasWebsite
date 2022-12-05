@@ -111,7 +111,7 @@ nav > ul {
 }
 
 .summary {
-   font-size: 30px;
+   font-size: 20px;
    margin: 7em 0px 0px 50px;
 }
 
@@ -119,7 +119,6 @@ h1 {
    color: rgba(255, 215, 0);
    position: relative;
    padding: 10px 0px 2px 8px;
-
 }
 
 h2 {
@@ -127,16 +126,16 @@ h2 {
 }
 
 h3 {
-   padding: 5px 0px 3px 20px;
+   padding: 5px 0px 3px 40px;
 }
 
 .resume {
    width: 80%;
-   background-color: rgba(62, 62, 62, 0.85);
+   background-color: rgba(40, 40, 40, 0.85);
    border: rgba(255, 215, 0);
    border-radius: 30px;
    padding: 5%;
-   margin: 10em 0px 0px 0px;
+   margin: 10em auto 0em auto;
 }
 
 .resume > ul {
@@ -178,10 +177,10 @@ h3 {
 
 
 footer {
-   bottom: 10px;
-   left: auto;
-   right: auto;
-   justify-content: center;
+
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 5px;
    color: green;
    background-color: black;
 }
