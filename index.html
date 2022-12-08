@@ -10,22 +10,21 @@
       <link rel="icon" type="image/x-icon" href="/images/favicon.png">
    </head>
    <body>
-      <header>
-         <canvas id="canvas1" name="bannerscript"></canvas> 
+      <div>
+         <canvas id="canvas2" name="constellations"></canvas> 
+      </div>
 
+      <header>
          <nav class="buttons">
             <button class="button button1" ><a href="index.html">HOME</a></button>
-            <button class="button button1" ><a href="about.html">ABOUT</a></button>
-            <button class="button button1" ><a href="projects.html">PROJECTS</a></button>
-            <button class="button button1" ><a href="contact.html">CONTACT</a></button>
+            <button class="button button2" ><a href="about.html">ABOUT</a></button>
+            <button class="button button3" ><a href="projects.html">PROJECTS</a></button>
+            <button class="button button4" ><a href="contact.html">CONTACT</a></button>
          </nav>
-
-
+         <canvas id="canvas1" name="bannerscript"></canvas> 
       </header>
+
       <main>
-         <div>
-            <canvas id="canvas2" name="constellations"></canvas> 
-         </div>
          <div id="summary-and-pfp">
             <p class="summary">Marsha Jelleff is a New York City based software engineer.<br>
                She has worked ...<br>
@@ -33,10 +32,9 @@
             </p>
             <img class="pfp" src="/images/Marshapfp2.png">
          </div>
-
          <div class="resume">
             <h1>Skills</h1>
-            <div class="divider"></div>
+            <div class="line-divider"></div>
                <ul>
                   <li>HTML</li>
                   <li>CSS</li>
@@ -48,7 +46,7 @@
                   
                </ul>
             <h1>Education</h1>
-            <div class="divider"></div>
+            <div class="line-divider"></div>
             <h2>
                Columbia University
             </h2>
@@ -58,18 +56,17 @@
                <li><strong>Discrete Maths:</strong> Probability, Statistics, Graph Theory </li> 
             </ul>
             <h1>Experience</h1>
-            <div class="divider"></div>
+            <div class="line-divider"></div>
          </div>
       
-
-
 
          <script src="/js/constellationscript.js"></script> 
          <script src="/js/bannerscript.js"></script> 
       </main>
+      
       <footer>
-         <p>Copyright &copy; 2022 marshajelleff.com, All Rights Reserved</p>
-         <p><a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a></p>
+         <p>Copyright &copy; 2022 marshajelleff.com, All Rights Reserved<br>
+         <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a></p>
       </footer>
    </body>
 </html>
