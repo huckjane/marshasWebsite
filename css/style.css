@@ -206,3 +206,25 @@ footer {
    min-width: 440px;
    padding: 0px px;
 }
+
+/* TODO mobile */
+@media only screen and (max-width: 1000px) {
+   body {
+      font-size: 16px;
+   }   
+}
+
+/* TODO larger screens  */
+@media only screen and (min-width: 1000px) {
+   body {
+      font-size: 12px;
+   }  
+}
+
+@media print {
+   body {
+      font-size: 12px;
+      background-color: white;
+      color: black;
+   }  
+}
