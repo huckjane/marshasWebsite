@@ -228,3 +228,7 @@ footer {
       color: black;
    }  
 }
+
+@media screen and (orientation: landscape) {
+   
+}
