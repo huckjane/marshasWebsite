@@ -32,6 +32,7 @@ header {
    margin-left: auto;
    margin-right: auto;
    z-index: -1;
+   width: 100vw;
 }
 
 nav > ul {
@@ -47,8 +48,9 @@ nav > ul {
 .buttons {
    position: absolute;
    top: 0;
-   width: 100vw;
+   width: 90vw;
    text-align: center;
+   margin: 0em auto 1em auto;
 }
 
 .button {
@@ -95,11 +97,9 @@ nav > ul {
    text-decoration: none;
 }
 
-
-
 /* constellations canvas */
 #canvas2 {
-   position: absolute;
+   position: fixed;
    top: 0; 
    left: 0;
    width: 100%;
@@ -119,6 +119,11 @@ h2 {
 
 h3 {
    padding: 5px 0px 3px 40px;
+}
+
+#middle {
+   margin: 1em auto;
+   text-align: center;
 }
 
 .resume {
@@ -146,13 +151,13 @@ h3 {
    position: relative;
    display: flex;
    width: 80%;
-   margin: 0em auto 0em auto;
+   margin: 1em auto 1em auto;
 }
 
 .summary {
    left: 2%;
    font-size: 20px;
-   margin: 7em 0px 0px 50px;
+   margin: 5em 10em 0em 2em;
 }
 
 .pfp {
@@ -160,6 +165,7 @@ h3 {
    right: 2%;
    max-width: 27%;
    float: right;
+   z-index: 1;
 }
 
 ::-webkit-scrollbar {
@@ -197,14 +203,15 @@ h3 {
 footer {
    position: relative;
    bottom: 0;
+   top: 100%;
    width: 38%;
    text-align: center;
-   margin: 2em auto;
+   margin: 3em auto 0 auto;
    color: green;
    background-color: rgba(5, 5, 5, 0.80);
    border-radius: 999px;
    min-width: 440px;
-   padding: 0px px;
+   padding: 0px 0px;
 }
 
 /* TODO mobile */

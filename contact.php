@@ -3,6 +3,13 @@
 // comment ADD PHONE NUMBER, BEST METHOD TO REPLY, SUBJECT LINE
 # comment See Page 198
 
+# Honeypot for spam blocking
+$honeypot = filter_input(INPUT_POST, 'nickname', FILTER_SANITIZE_STRING);
+if ($honeypot) {
+    header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
+    exit;
+}
+
 $me = "marshajelleff@gmail.com";
 
 $firstname = $_POST['first-name'];
@@ -11,7 +18,7 @@ $email = $_POST['email'];
 $accounttype = $_POST['account-type'];
 $referrer = $_POST['referrer'];
 $message = $_POST['message'];
-$subject = "Message from MarshaJelleff.com"
+$subject = "Message from MarshaJelleff.com";
 $submit = $_POST['submit'];
 
 // Email Validation
@@ -29,11 +36,12 @@ Referrer: $referrer
 Message: $message'';
 
 // Email Header
-$header = "Reply-to: $email";
+$headers = "Reply-to: $email";
 
 // Send the Message
-mail($me, $subject, $header);
+mail($me, $subject, $headers);
 
-<p>Thank you. Your message has been sent.</p>
+header('Location: thank_you.html');
+
 
 ?>

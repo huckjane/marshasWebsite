@@ -1,5 +1,6 @@
 body {
     background-image: url("/images/green-maze1.png");
+    position: fixed;
 }
 
 
@@ -7,3 +8,8 @@ body {
     margin: 1em auto;
     text-align: center;
 }
+
+footer {
+    background-color: rgba(5, 5, 5, 0.80);
+    margin: 600px auto 0 auto;
+   }
