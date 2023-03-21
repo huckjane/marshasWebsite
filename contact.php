@@ -10,7 +10,7 @@ if ($honeypot) {
     exit;
 }
 
-$me = "marshajelleff@gmail.com";
+$to = "marshajelleff@gmail.com";
 
 $firstname = $_POST['first-name'];
 $lastname = $_POST['last-name'];
@@ -27,21 +27,26 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL))  (
 )
 
 // Message sent confirmation
-$content = ''
-First Name: $firstname
-Last Name: $lastname 
-Email: $email
-Account Type: $accounttype
-Referrer: $referrer
-Message: $message'';
+$content = "
+First Name: ".$firstname ."\r\n
+Last Name: ".$lastname ."\r\n 
+Email: ".$email ."\r\n
+Account Type: ".$accounttype ."\r\n
+Referrer: ".$referrer ."\r\n
+Message: ". $message";
 
 // Email Header
-$headers = "Reply-to: $email";
+$headers[] = 'MIME-Version: 1.0';
+$headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
-// Send the Message
-mail($me, $subject, $headers);
+// Additional headers
+$headers[] = "To: $to";
+$headers[] = "From: $email";
+$header = implode('\r\n', $headers);
 
-header('Location: thank_you.html');
+// Mail it
+mail($to, $subject, $content, $header);
 
+if (isset($_POST['submit'])){   header("Location: thank_you.html")   }
 
 ?>
