@@ -57,6 +57,10 @@ h1, p {
     width: 100%;
     min-height: 8em;
   }
+
+  .user-cannot-see {
+    display: none;
+  }
   
   input, textarea {
     background-color: rgb(1, 86, 1);

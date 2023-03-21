@@ -19,12 +19,12 @@
             <button class="button button1" ><a href="contact.html">CONTACT</a></button>
          </nav>
       </header>
-      // ADD PHONE NUMBER 
+      <!--ADD PHONE NUMBER -->
       <main>
         <div class="form-container">
          <h1>Contact Marsha</h1>
          <p>Please feel free to contact me for any reason!</p>
-         <form method=“POST” action="https://marshajelleff.com/contact.php">
+         <form method=“post” action="contact.php">
            <fieldset>
              <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
              <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
@@ -44,8 +44,8 @@
                  <option value="4">Other</option>
                </select>
              </label>
-             <label for="comment">Leave a Comment:
-               <textarea id="comment" name="comment" rows="3" cols="30" placeholder=""></textarea>
+             <label for="message">Send a message:
+               <textarea id="message" name="message" maxlength=1000 rows="3" cols="30" placeholder=""></textarea>
              </label>
              <label for="nickname" aria-hidden="true" class="user-cannot-see"> Nickname
                <input type="text" name="nickname" id="nickname" class="user-cannont-see" autocomplete="off" tabindex="-1">

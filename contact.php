@@ -5,13 +5,14 @@
 
 $me = "marshajelleff@gmail.com";
 
-$firstname = $_REQUEST['first-name'];
-$lastname = $_REQUEST['last-name'];
-$email = $_REQUEST['email'];
-$accounttype = $_REQUEST['account-type'];
-$referrer = $_REQUEST['referrer'];
-$comment = $_REQUEST['comment'];
-$submit = $_REQUEST['submit'];
+$firstname = $_POST['first-name'];
+$lastname = $_POST['last-name'];
+$email = $_POST['email'];
+$accounttype = $_POST['account-type'];
+$referrer = $_POST['referrer'];
+$message = $_POST['message'];
+$subject = "Message from MarshaJelleff.com"
+$submit = $_POST['submit'];
 
 // Email Validation
 if (filter_var($email, FILTER_VALIDATE_EMAIL))  (
@@ -25,14 +26,14 @@ Last Name: $lastname
 Email: $email
 Account Type: $accounttype
 Referrer: $referrer
-Comment: $comment'';
+Message: $message'';
 
 // Email Header
 $header = "Reply-to: $email";
 
 // Send the Message
-mail($me, $me, $subject, $header);
-?>
+mail($me, $subject, $header);
+
 <p>Thank you. Your message has been sent.</p>
 
 ?>
