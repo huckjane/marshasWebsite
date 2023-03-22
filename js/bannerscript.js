@@ -1,5 +1,7 @@
 const canvas1 = document.getElementById('canvas1');
-const ctx1 = canvas1.getContext('2d');
+const ctx1 = canvas1.getContext('2d', {
+   willReadFrequently: true
+});
 canvas1.width = window.innerWidth;
 canvas1.height = window.innerHeight;
 let particleArray = [];
