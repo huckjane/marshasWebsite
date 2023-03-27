@@ -5,7 +5,7 @@ const ctx1 = canvas1.getContext('2d', {
 canvas1.width = window.innerWidth;
 canvas1.height = window.innerHeight;
 let particleArray = [];
-adjustX = 20;
+adjustX = 21;
 adjustY = 0;
 
 // handle mouse
@@ -21,8 +21,9 @@ window.addEventListener('mousemove', function(event){
 }); 
 
 ctx1.fillStyle = 'green';
-ctx1.font = '1.25em Courier New';
-ctx1.fillText('MARSHA JELLEFF', 0, 30);
+ctx1.font = '1.48em Courier New';
+// ctx1.textAlign = 'center';
+ctx1.fillText('MARSHA JELLEFF', 0, 25);
 const textCoordinates = ctx1.getImageData(0, 0, 300, 100);
 
 class Particle {
