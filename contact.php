@@ -47,6 +47,6 @@ $header = implode('\r\n', $headers);
 // Mail it
 mail($to, $subject, $content, $header);
 
-if (isset($_POST['submit'])){   header("Location: thank_you.html")   }
+if (isset($_POST['submit'])){   header('Location: thank_you.html')   }
 
 ?>
