@@ -97,6 +97,17 @@ nav > ul {
    text-decoration: none;
 }
 
+.button-resume {
+   width: 12%
+}
+
+.buttons-resume-box {
+
+   width: 90vw;
+   text-align: center;
+   margin: 0em auto 1em auto;
+}
+
 /* constellations canvas */
 #canvas2 {
    position: fixed;
