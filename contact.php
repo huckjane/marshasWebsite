@@ -4,14 +4,14 @@
 # comment See Page 198
 
 # Honeypot for spam blocking
-$honeypot = filter_input(INPUT_POST, 'nickname', FILTER_SANITIZE_STRING);
-if ($honeypot) {
-    header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
-    exit;
-}
+// $honeypot = filter_input(INPUT_POST, 'nickname', FILTER_SANITIZE_STRING);
+// if ($honeypot) {
+//     header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
+//     exit;
+// }
 
-$to = "marshajelleff@gmail.com";
-//$to = "khalidjanuet@gmail.com";
+//$to = "marshajelleff@gmail.com";
+$to = "khalidjanuet@gmail.com";
 $firstname = $_POST['first-name'];
 $lastname = $_POST['last-name'];
 $email = $_POST['email'];
@@ -22,9 +22,10 @@ $subject = "Message from MarshaJelleff.com";
 $submit = $_POST['submit'];
 
 // Email Validation
-//if (filter_var($email, FILTER_VALIDATE_EMAIL))  {
- //   die("Invalid email.");
-//}
+print($email);
+if (!filter_var($email, FILTER_VALIDATE_EMAIL))  {
+    die("Invalid email.");
+}
 
 // Message sent confirmation
 $content = "
