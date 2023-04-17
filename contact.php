@@ -22,9 +22,9 @@ $subject = "Message from MarshaJelleff.com";
 $submit = $_POST['submit'];
 
 // Email Validation
-if (filter_var($email, FILTER_VALIDATE_EMAIL))  {
-    die("Invalid email.");
-}
+//if (filter_var($email, FILTER_VALIDATE_EMAIL))  {
+ //   die("Invalid email.");
+//}
 
 // Message sent confirmation
 $content = "
