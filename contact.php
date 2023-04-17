@@ -10,8 +10,8 @@
 //     exit;
 // }
 
-//$to = "marshajelleff@gmail.com";
-$to = "khalidjanuet@gmail.com";
+$to = "marshajelleff@gmail.com";
+//$to = "khalidjanuet@gmail.com";
 $firstname = $_POST['first-name'];
 $lastname = $_POST['last-name'];
 $email = $_POST['email'];
