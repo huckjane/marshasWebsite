@@ -11,7 +11,7 @@ if ($honeypot) {
 }
 
 $to = "marshajelleff@gmail.com";
-
+//$to = "khalidjanuet@gmail.com";
 $firstname = $_POST['first-name'];
 $lastname = $_POST['last-name'];
 $email = $_POST['email'];
@@ -22,9 +22,9 @@ $subject = "Message from MarshaJelleff.com";
 $submit = $_POST['submit'];
 
 // Email Validation
-if (filter_var($email, FILTER_VALIDATE_EMAIL))  (
+if (filter_var($email, FILTER_VALIDATE_EMAIL))  {
     die("Invalid email.");
-)
+}
 
 // Message sent confirmation
 $content = "
@@ -33,9 +33,9 @@ Last Name: ".$lastname ."\r\n
 Email: ".$email ."\r\n
 Account Type: ".$accounttype ."\r\n
 Referrer: ".$referrer ."\r\n
-Message: ". $message";
+Message: ". $message;
 
-// Email Header
+
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
@@ -47,6 +47,6 @@ $header = implode('\r\n', $headers);
 // Mail it
 mail($to, $subject, $content, $header);
 
-if (isset($_POST['submit'])){   header('Location: thank_you.html')   }
+if (isset($_POST['submit'])){   header('Location: thank_you.html');   }
 
 ?>
