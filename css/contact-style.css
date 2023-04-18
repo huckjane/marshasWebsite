@@ -10,7 +10,7 @@ h1, p {
   .form-container {
    width: 70%;
    background-color: rgba(5, 5, 5, 0.80);
-   border: rgba(255, 215, 0);
+   border: gold;
    border-radius: 30px;
    padding: 5%;
    margin: 10em auto;
