@@ -10,7 +10,7 @@ h1, p {
   .form-container {
    width: 70%;
    background-color: rgba(5, 5, 5, 0.80);
-   border: gold;
+   border: rgba(255, 215, 0);
    border-radius: 30px;
    padding: 5%;
    margin: 10em auto;
@@ -29,7 +29,7 @@ h1, p {
   fieldset {
     border: none;
     padding: 1rem 0;
-    border-bottom: 3px solid gold;
+    border-bottom: 3px solid rgba(255, 215, 0);
   }
   
   fieldset:last-of-type {
@@ -81,7 +81,7 @@ h1, p {
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: gold;
+    background-color: rgba(255, 215, 0);
     border-color: white;
     min-width: 40px;
     text-shadow: 1px 1px 2px grey;
