@@ -145,7 +145,7 @@ h3 {
    border: rgba(255, 215, 0);
    border-radius: 30px;
    padding: 2% 5%;
-   margin: 0em auto 0em auto;
+   margin: 0em auto 2em auto;
 }
 
 .resume > ul {
@@ -158,14 +158,6 @@ h3 {
    padding: 0px 0px 5px 0px;
    clear: right;
  }
-
-/*#summary-and-pfp {
-   position: relative;
-   display: flex;
-
-   margin: 1em auto 1em auto;
-}
-*/
 
 #summary-and-pfp {
    position: relative;
