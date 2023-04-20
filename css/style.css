@@ -301,7 +301,7 @@ footer {
          animation: icon3d 200ms infinite;
  }
 
-@keyframes .social {
+@keyframes social {
   0% {
     text-shadow: 5px 4px  var(--gold), -5px -6px var(--green);
   }

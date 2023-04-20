@@ -4,11 +4,11 @@
 # comment See Page 198
 
 # Honeypot for spam blocking
-// $honeypot = filter_input(INPUT_POST, 'nickname', FILTER_SANITIZE_STRING);
-// if ($honeypot) {
-//     header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
-//     exit;
-// }
+$honeypot = filter_input(INPUT_POST, 'nickname', FILTER_SANITIZE_STRING);
+if ($honeypot) {
+    header($_SERVER['SERVER_PROTOCOL'] . ' 405 Method Not Allowed');
+    exit;
+}
 
 $to = "marshajelleff@gmail.com";
 $firstname = $_POST['first-name'];
