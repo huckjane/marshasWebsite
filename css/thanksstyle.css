@@ -22,7 +22,6 @@ canvas {
    z-index: 1;
 }
 
-
 input {
    position: absolute;
    width: calc(100% - 20px);
@@ -34,8 +33,7 @@ input {
 
 #gap {
    position: relative;
-   height: 750px;
-   
+   height: 750px;   
 }
 
 .flex-center {
