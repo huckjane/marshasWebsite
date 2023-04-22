@@ -1,0 +1,63 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   overflow: hidden;
+
+}
+
+canvas {
+   background: black;
+   position: absolute;
+   top: 0;
+   left: 0;
+   
+   z-index: -1;
+}
+
+input {
+   position: absolute;
+   width: calc(100% - 20px);
+   padding: 10px;
+   margin: 10px;
+   z-index: 2;   
+   display: none; 
+}
+
+#gap {
+   position: relative;
+   height: 750px;
+   
+}
+
+.flex-center {
+   vertical-align: bottom;
+}
+
+.buttons-resume-box {
+   vertical-align: bottom;
+}
+
+footer {
+   vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+
+/*
+box-sizing: border-box means that padding and border will
+    be included in elements total width and height. 
+    Does not affect margin. Use calc() instead for margin (ex: input width). 
+
+
+
+*/
