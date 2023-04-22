@@ -37,8 +37,10 @@ header {
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 0px;
+   text-align: center;
+   align-items: center;
    z-index: -1;
-   width: 80vw;
+   width: 100vw;
 }
 
 nav > ul {
@@ -269,9 +271,9 @@ footer {
 .flex-center {
    text-align: center;
    margin: 4em auto 4em auto;
-   width: 10%;
-   min-height: 1em;
-   max-height: 2em;
+   width: 11%;
+   min-height: 5em;
+   max-height: 6em;
    background-color: rgba(0, 0, 0, 0.6); 
    display: -webkit-box;
    display: -webkit-flex;
@@ -290,10 +292,11 @@ footer {
 }
 
 .social {
-  padding: 5px;
+  padding: 1px;
   -webkit-animation: icon3d 200ms 10;
   animation: icon3d 200ms 10;
   color: #fff;
+  border-radius: 30px;
 }
 
 .social:hover {

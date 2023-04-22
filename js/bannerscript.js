@@ -22,7 +22,8 @@ window.addEventListener('mousemove', function(event){
 
 ctx1.fillStyle = 'green';
 ctx1.font = '1.48em Courier New';
-// ctx1.textAlign = 'center';
+//ctx1.textAlign = 'center';
+//centerX = canvas.width/2;
 ctx1.fillText('MARSHA JELLEFF', 0, 25);
 const textCoordinates = ctx1.getImageData(0, 0, 300, 100);
 
